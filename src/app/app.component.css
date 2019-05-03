@@ -1,0 +1,31 @@
+.frt-containet {
+    padding-top: 30vh;
+}
+#barr {
+    background: #C70077;
+}
+#logo{
+    background-image: url("../assets/img/adventure-time-landscape.jpg");
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height: 100vh;
+}
+.parents {
+    background: none;
+}
+.parents:hover {
+    background: #fff;
+}
+footer {
+    background: #3845AD;
+}
+/* Scrollbarr */
+body::-webkit-scrollbar{
+    width: 7px;
+    background: rgb(247, 247, 247);
+}
+body::-webkit-scrollbar-thumb{
+    background: #30d3e9;
+    border-radius: 5px;
+}
