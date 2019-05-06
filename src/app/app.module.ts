@@ -21,6 +21,7 @@ import { EthicsComponent } from './components/ethics/ethics.component';
 import { ScienceComponent } from './components/science/science.component';
 import { ArtComponent } from './components/art/art.component';
 import { GeographyComponent } from './components/geography/geography.component';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { GeographyComponent } from './components/geography/geography.component';
     EthicsComponent,
     ScienceComponent,
     ArtComponent,
-    GeographyComponent
+    GeographyComponent,
+    UserProfileComponent
   ],
   imports: [
     NgbModule.forRoot(),

@@ -1,0 +1,101 @@
+<nav class="navbar navbar-light fixed-top" id="barr">
+  <a class="navbar-brand text-white font-weight-bold">
+    <img src="../assets/img/ico.png" alt="Ludus" height="30">
+    Ludus
+  </a>
+
+  <button class="btn btn-secondary mr-auto ml-3" routerLink="/playground">Acividades</button>
+  
+</nav>
+
+<div class="container mt-5 mb-3">
+  <div class="row mt-3 pt-3">
+    <div class="col-md-8 mt-3">
+      <img src="../../../assets/img/user.png" alt="Perfil imagen" id="image-profile">
+      <h3 class="d-inline ml-4">User_name</h3>
+      <button class="btn btn-primary float-right">Editar</button>
+      <hr class="bg-success">
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="apro-tab" data-toggle="tab" href="#apro" role="tab" aria-controls="apro" aria-selected="true">Aprovechamiento</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="friends-tab" data-toggle="tab" href="#friends" role="tab" aria-controls="friends" aria-selected="false">Amigos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profesor-tab" data-toggle="tab" href="#profesor" role="tab" aria-controls="profesor" aria-selected="false">Profesor</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <!-- Aprovechamiento -->
+        <div class="tab-pane fade show active" id="apro" role="tabpanel" aria-labelledby="apro-tab">
+          <div class="card mt-3">
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Español</h5>
+                    <p>Promedio: 60%</p>
+                  </div>
+                  <img src="../../../assets/img/Captura de pantalla de 2018-11-25 18-34-56.png" alt="" class="m-1 w-100">
+                  <small class="float-right text-muted">3 days ago</small>
+                </a>
+                <a class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Geografia</h5>
+                    <p>Promedio: 80%</p>
+                  </div>
+                  <img src="../../../assets/img/Captura de pantalla de 2018-11-25 18-34-56.png" alt="" class="m-1 w-100">
+                  <small class="float-right text-muted">3 days ago</small>
+                </a>
+                <a class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Matematicas</h5>
+                    <p>Promedio: 80%</p>
+                  </div>
+                  <img src="../../../assets/img/Captura de pantalla de 2018-11-25 18-34-56.png" alt="" class="m-1 w-100">
+                  <small class="float-right text-muted">3 days ago</small>
+                </a>
+            </div>
+          </div>
+        </div>
+        <!-- Amigos -->
+        <div class="tab-pane fade" id="friends" role="tabpanel" aria-labelledby="friends-tab">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim debitis adipisci ea reiciendis, exercitationem cum voluptatibus corrupti at autem sapiente asperiores nam doloribus eveniet perspiciatis quidem pariatur nulla qui!
+        </div>
+        <!-- Profesor -->
+        <div class="tab-pane fade" id="profesor" role="tabpanel" aria-labelledby="profesor-tab">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quisquam vel maxime aspernatur quasi placeat optio repellat quibusdam veniam quae amet dolores culpa, laudantium eius! Accusamus facilis beatae excepturi vero.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mt-3">
+        <div class="card-body">
+          <div class="card-title h2 font-weight-bold">
+            Grupos
+          </div>
+          <div class="list-group">
+              <a class="list-group-item list-group-item-action">Cras justo odio</a>
+              <a class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+              <a class="list-group-item list-group-item-action">Morbi leo risus</a>
+              <a class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+              <a class="list-group-item list-group-item-action active text-center text-white">Agragar</a>
+            </div>
+        </div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-body">
+          <div class="card-title h2 font-weight-bold">
+            Nivel 5
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              25%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
