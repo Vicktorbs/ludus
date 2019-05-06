@@ -1,0 +1,52 @@
+<app-nav></app-nav>
+<header class="header">
+  <div id="logo">
+      <section>
+          <div class="container frt-containet">
+              <div class="row justify-content-center">
+                    <div *ngIf="sesion" class="col-md-4 bg-white rounded-lg shadow-lg mr-1 ml-1">
+                        <h1 class="text-center mt-2">Ludus</h1>
+                        <p class="text-muted text-center">"Donde se entrena a los gladiadores"</p>
+                        <a routerLink="/registro" class="btn btn-success btn-block btn-lg">Registrar</a>
+                        <button (click)="startSesion()" class="btn btn-primary btn-block btn-lg mb-4">Iniciar sesión</button>
+                    </div>
+                    <div *ngIf="!sesion" class="col-md-6 bg-white rounded-lg shadow-lg mr-1 ml-1">
+                        <button (click)="choosin()" class="btn btn-danger mt-2">Regresar</button>
+                        <app-userlog></app-userlog>
+                    </div>
+              </div>
+              <div class="row justify-content-center">
+                  <div class="col-md-4">
+                      <a href="#parents" class="btn btn-light btn-lg btn-block mt-4 text-dark parents">Información para padres</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+</header>
+
+<section>
+  <div class="container" id="parents">
+      <div class="row">
+          <div class="col-md">
+              <h2 class="mt-5">Informacion para padres</h2>
+              <hr>
+              <p class="text-justify">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quibusdam dolorum nobis! Sequi cupiditate quis beatae tenetur, quae deleniti quod molestiae, dignissimos maiores vero nemo veritatis tempore obcaecati earum neque?
+                  Amet, asperiores vero ad error, suscipit repellat corporis odio totam atque veritatis consequuntur autem expedita quaerat molestias. Voluptate suscipit labore ad facilis quaerat at asperiores? A optio autem eum temporibus!
+                  Veritatis dolore voluptate corporis tenetur provident tempora nobis praesentium, delectus beatae voluptatibus ratione est similique? Voluptates illo enim magnam velit sequi, adipisci dolores unde officiis eveniet in error nemo laudantium.
+                  Eum unde eius atque repudiandae hic ut impedit expedita quibusdam nemo laudantium quis velit doloribus nostrum iure cumque consequuntur, consectetur exercitationem. Dolore dicta iure nihil molestiae. Saepe adipisci quo laborum.
+                  Magni delectus facilis hic voluptate odit maiores rerum fugiat est obcaecati nesciunt illum doloribus dolorem aut ullam modi architecto expedita, nemo id sit. Similique veritatis adipisci omnis expedita beatae ut?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quibusdam dolorum nobis! Sequi cupiditate quis beatae tenetur, quae deleniti quod molestiae, dignissimos maiores vero nemo veritatis tempore obcaecati earum neque?
+                  Amet, asperiores vero ad error, suscipit repellat corporis odio totam atque veritatis consequuntur autem expedita quaerat molestias. Voluptate suscipit labore ad facilis quaerat at asperiores? A optio autem eum temporibus!
+                  Veritatis dolore voluptate corporis tenetur provident tempora nobis praesentium, delectus beatae voluptatibus ratione est similique? Voluptates illo enim magnam velit sequi, adipisci dolores unde officiis eveniet in error nemo laudantium.
+                  Eum unde eius atque repudiandae hic ut impedit expedita quibusdam nemo laudantium quis velit doloribus nostrum iure cumque consequuntur, consectetur exercitationem. Dolore dicta iure nihil molestiae. Saepe adipisci quo laborum.
+                  Magni delectus facilis hic voluptate odit maiores rerum fugiat est obcaecati nesciunt illum doloribus dolorem aut ullam modi architecto expedita, nemo id sit. Similique veritatis adipisci omnis expedita beatae ut?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quibusdam dolorum nobis! Sequi cupiditate quis beatae tenetur, quae deleniti quod molestiae, dignissimos maiores vero nemo veritatis tempore obcaecati earum neque?
+                  Amet, asperiores vero ad error, suscipit repellat corporis odio totam atque veritatis consequuntur autem expedita quaerat molestias. Voluptate suscipit labore ad facilis quaerat at asperiores? A optio autem eum temporibus!
+              </p>
+          </div>
+      </div>
+  </div>
+</section>
+<app-footer></app-footer>

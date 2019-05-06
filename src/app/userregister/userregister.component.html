@@ -1,14 +1,30 @@
-<p class="h5 mt-3">Formulario de registro</p>
-<form class="m-4 text-center">
-  <div class="form-group row">
-    <label for="userEmail" class="">Correo electronico</label>
-    <input type="email" class="form-control" id="userEmail" placeholder="correo@ejemplo.com">
-    <small id="emailHelp" class="form-text text-muted text-justify">Ingresa la direcciond de correo electronico con la que te registraste.</small>
+<app-nav></app-nav>
+<header>
+  <div id="logo">
+    <section>
+      <div class="container frt-containet mt-5">
+        <div class="row mt-3 pt-4">
+          <div class="col-md">
+            <button routerLink="/" class="btn btn-danger">Regresar</button>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <form class="col-md-6 bg-white p-3 m-4 text-center">
+            <p class="h5 mt-2">Formulario de registro</p>
+            <div class="form-group">
+              <label for="userEmail" class="">Correo electronico</label>
+              <input type="email" class="form-control" id="userEmail" placeholder="correo@ejemplo.com">
+              <small id="emailHelp" class="form-text text-muted text-justify">Ingresa la direcciond de correo electronico con la que te registraste.</small>
+            </div>
+            <div class="form-group">
+              <label for="Password" class="">Password</label>
+              <input type="password" class="form-control" id="Password" placeholder="Contraseña">
+              <small id="emailHelp" class="form-text text-muted text-justify">Escribe tu contraseña.</small>
+            </div>
+            <button type="submit" class="btn btn-primary shadow">Ingresar</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </div>
-  <div class="form-group row">
-    <label for="Password" class="">Password</label>
-    <input type="password" class="form-control" id="Password" placeholder="Contraseña">
-    <small id="emailHelp" class="form-text text-muted text-justify">Escribe tu contraseña.</small>
-  </div>
-  <button type="submit" class="btn btn-primary shadow">Ingresar</button>
-</form>
+</header>

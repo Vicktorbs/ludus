@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg navbar-light text-white" id="barr">
+
+    <!-- User Info -->
+    <app-user-nav></app-user-nav> 
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sections" aria-controls="sections" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse ml-5" id="sections">
+        <div class="nav nav-pills flex-column flex-sm-row" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="math-area-tab" data-toggle="tab" href="#math-area" role="tab" aria-controls="math-area" aria-selected="true">
+                Matematicas
+            </a>
+            <a class="nav-item nav-link" id="spanish-area-tab" data-toggle="tab" href="#spanish-area" role="tab" aria-controls="spanish-area" aria-selected="false">
+                Español
+            </a>
+            <a class="nav-item nav-link" id="history-area-tab" data-toggle="tab" href="#history-area" role="tab" aria-controls="history-area" aria-selected="false">
+                Historia
+            </a>
+            <a class="nav-item nav-link" id="ethics-area-tab" data-toggle="tab" href="#ethics-area" role="tab" aria-controls="ethics-area" aria-selected="false">
+                Formacion Civica y Etica
+            </a>
+            <a class="nav-item nav-link" id="science-area-tab" data-toggle="tab" href="#science-area" role="tab" aria-controls="science-area" aria-selected="false">
+                Ciencias Naturales
+            </a>
+            <a class="nav-item nav-link" id="art-area-tab" data-toggle="tab" href="#art-area" role="tab" aria-controls="art-area" aria-selected="false">
+                Educacion Artistica
+            </a>
+            <a class="nav-item nav-link" id="geography-area-tab" data-toggle="tab" href="#geography-area" role="tab" aria-controls="geography-area" aria-selected="false">
+                Geografia
+            </a>
+        </div>
+    </div>
+
+</nav>
+
+
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="math-area" role="tabpanel" aria-labelledby="math-area-tab">
+        <app-math></app-math>
+    </div>
+    <div class="tab-pane fade" id="spanish-area" role="tabpanel" aria-labelledby="spanish-area-tab">
+        <app-spanish></app-spanish>
+    </div>
+    <div class="tab-pane fade" id="history-area" role="tabpanel" aria-labelledby="history-area-tab">
+        <app-history></app-history>
+    </div>
+    <div class="tab-pane fade" id="ethics-area" role="tabpanel" aria-labelledby="ethics-area-tab">
+        <app-ethics></app-ethics>
+    </div>
+    <div class="tab-pane fade" id="science-area" role="tabpanel" aria-labelledby="science-area-tab">
+        <app-science></app-science>
+    </div>
+    <div class="tab-pane fade" id="art-area" role="tabpanel" aria-labelledby="art-area-tab">
+        <app-art></app-art>
+    </div>
+    <div class="tab-pane fade" id="geography-area" role="tabpanel" aria-labelledby="geography-area-tab">
+        <app-geography></app-geography>
+    </div>
+</div>

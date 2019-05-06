@@ -1,0 +1,7 @@
+#logo{ 
+    background-image: url("../../assets/img/adventure-time-landscape.jpg");
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height: 95vh;
+}
