@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ChartsModule } from 'ng2-charts'
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UserlogComponent } from './userlog/userlog.component';
@@ -22,6 +23,7 @@ import { ScienceComponent } from './components/science/science.component';
 import { ArtComponent } from './components/art/art.component';
 import { GeographyComponent } from './components/geography/geography.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { UserGraficInfoComponent } from './components/user-grafic-info/user-grafic-info.component';
 
 @NgModule({
   declarations: [
@@ -42,12 +44,14 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
     ScienceComponent,
     ArtComponent,
     GeographyComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    UserGraficInfoComponent
   ],
   imports: [
     NgbModule.forRoot(),
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
