@@ -16,7 +16,7 @@ export class UserGraficInfoComponent implements OnInit {
   public radarChartLabels: Label[] = ['Matematicas', 'Español', 'Historia', 'Formacion C y E', 'Ciencias Naturales', 'Educacion Artistica', 'Geografia'];
 
   public radarChartData: ChartDataSets[] = [
-    { data: [65, 59, 90, 81, 56, 55, 40], label: 'Avance' }
+    { data: [60, 0, 0, 0, 0, 0, 80], label: 'Avance' }
   ];
   public radarChartType: ChartType = 'radar';
 

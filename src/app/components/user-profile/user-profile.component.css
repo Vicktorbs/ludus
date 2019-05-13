@@ -1,6 +1,9 @@
 #barr {
     background: #3498DB;
 }
-#image-profile {
+#image-profile  {
     width: 9%;
+}
+.users {
+    width: 7%;
 }
