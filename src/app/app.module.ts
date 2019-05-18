@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChartsModule } from 'ng2-charts'
+import { OwlModule } from 'ngx-owl-carousel';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UserlogComponent } from './userlog/userlog.component';
@@ -51,7 +52,8 @@ import { UserGraficInfoComponent } from './components/user-grafic-info/user-graf
     NgbModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
-    ChartsModule
+    ChartsModule,
+    OwlModule
   ],
   providers: [],
   bootstrap: [AppComponent]

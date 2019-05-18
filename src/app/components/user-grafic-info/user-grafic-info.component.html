@@ -16,40 +16,40 @@
       </div>
     </div>
   </a>
-    <a class="list-group-item list-group-item-action">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Matematicas</h5>
-        <p>Promedio: 60%</p>
-      </div>
-      <div style="display: block;">
-        <canvas baseChart width="400" height="400"
-          [datasets]="lineChartData"
-          [labels]="lineChartLabels"
-          [options]="lineChartOptions"
-          [colors]="lineChartColors"
-          [legend]="lineChartLegend"
-          [chartType]="lineChartType"
-          [plugins]="lineChartPlugins">
-        </canvas>
-      </div>
-      <small class="float-right text-muted">2 hours ago</small>
-    </a>
-    <a class="list-group-item list-group-item-action">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Geografia</h5>
-        <p>Promedio: 80%</p>
-      </div>
-      <div style="display: block;">
-        <canvas baseChart width="400" height="400"
-          [datasets]="lineChartData"
-          [labels]="lineChartLabels"
-          [options]="lineChartOptions"
-          [colors]="lineChartColors"
-          [legend]="lineChartLegend"
-          [chartType]="lineChartType"
-          [plugins]="lineChartPlugins">
-        </canvas>
-      </div>
-      <small class="float-right text-muted">3 days ago</small>
-    </a>
+  <a class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Matematicas</h5>
+      <p>Promedio: 60%</p>
+    </div>
+    <div style="display: block;">
+      <canvas baseChart height="100"
+        [datasets]="lineChartData"
+        [labels]="lineChartLabels"
+        [options]="lineChartOptions"
+        [colors]="lineChartColors"
+        [legend]="lineChartLegend"
+        [chartType]="lineChartType"
+        [plugins]="lineChartPlugins">
+      </canvas>
+    </div>
+    <small class="float-right text-muted">2 hours ago</small>
+  </a>
+  <a class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Geografia</h5>
+      <p>Promedio: 80%</p>
+    </div>
+    <div style="display: block;">
+      <canvas baseChart height="100"
+        [datasets]="lineChartData"
+        [labels]="lineChartLabels"
+        [options]="lineChartOptions"
+        [colors]="lineChartColors"
+        [legend]="lineChartLegend"
+        [chartType]="lineChartType"
+        [plugins]="lineChartPlugins">
+      </canvas>
+    </div>
+    <small class="float-right text-muted">3 days ago</small>
+  </a>
 </div>

@@ -1,3 +1,50 @@
-<p>
-  math works!
-</p>
+<section class="container mt-3">
+  <div class="row mb-2">
+    <div class="col-md">
+      <article class="card">
+        <div class="card-title">
+          <p class="h3 m-2">Seccion A1</p>
+        </div>
+        <div class="card-body">
+          <owl-carousel [options]="mySlideOptions" [items]="images" [carouselClasses]="['owl-carousel owl-theme', 'sliding']" >
+            <div class="item" *ngFor="let image of links;let i = index">
+              <div>
+                <div class="card m-2 shadow-sm">
+                  <img src="../../../assets/img/adventure-time-landscape.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a routerLink="/playground" class="btn btn-secondary stretched-link">{{image}}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </owl-carousel>
+          <!--  -->
+        </div>
+      </article>
+    </div>
+  </div><div class="row mb-2">
+      <div class="col-md">
+        <article class="card">
+          <div class="card-title">
+            <p class="h3 m-2">Seccion 2</p>
+          </div>
+          <div class="card-body">
+            <owl-carousel [options]="mySlideOptions" [items]="images" [carouselClasses]="['owl-carousel owl-theme', 'sliding']" >
+              <div class="item" *ngFor="let image of links;let i = index">
+                <div>
+                  <div class="card m-2 shadow-sm">
+                    <img src="../../../assets/img/adventure-time-landscape.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a routerLink="/playground" class="btn btn-secondary stretched-link">{{image}}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </owl-carousel>
+            <!--  -->
+          </div>
+        </article>
+      </div>
+    </div>
+</section>
+
