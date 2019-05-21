@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthenticationService } from '../../services/authentication.service'
 
 @Component({
   selector: 'app-user-basic-info',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserBasicInfoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authService: AuthenticationService, private router: Router) { }
 
   ngOnInit() {
+  }
+
+  onLogout() {
+    this.authService.logout()
+    this.router.navigateByUrl('/');
   }
 
 }

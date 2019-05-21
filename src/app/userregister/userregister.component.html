@@ -5,27 +5,23 @@
       <div class="container frt-containet mt-5">
         <div class="row mt-3 pt-4 justify-content-center">
           <div class="col-md-8 bg-white p-3 m-4 rounded">
-            <form>
+            <form #fmrRegister="ngForm" (ngSubmit)="onRegister(fmrRegister)">
               <p class="h5 mt-2 text-center">Formulario de registro</p>
               <div class="row">
                 <div class="col-md-6">
                   <p class="font-weight-bold h3 text-center">Usuario</p>
                   <div class="row">
                     <div class="col-md-6">
-                      <input type="text" class="form-control mt-3" placeholder="Nombre">
+                      <input type="text" class="form-control mt-3" placeholder="Nombre" name="name" ngModel required>
                     </div>
                     <div class="col-md-6">
-                      <input type="text" class="form-control mt-3" placeholder="Apellido paterno">
+                      <input type="text" class="form-control mt-3" placeholder="Apellido paterno" name="apellid_paterno">
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-6">
-                      <input type="text" class="form-control mt-3" placeholder="Segundo materno">
+                      <input type="text" class="form-control mt-3" placeholder="Apellido materno" name="apellido_materno">
                     </div>
-                  </div>
-                  <div class="form-group mt-2">
-                    <label for="profile-photo">Imagen de perfil</label>
-                    <input type="file" class="form-control-file" id="profile-photo">
                   </div>
                   <div class="form-group mt-2">
                     <label for="age">Edad</label>
@@ -54,12 +50,25 @@
                   <p class="font-weight-bold h3 text-center">Tutor</p>
                   <div class="form-group">
                     <label for="userEmail" class="">Correo electronico</label>
-                    <input type="email" class="form-control" id="userEmail" placeholder="correo@ejemplo.com">
+                    <input type="email" class="form-control" id="userEmail" placeholder="correo@ejemplo.com" name="email" ngModel required>
                     <small id="emailHelp" class="form-text text-muted text-justify">Ingresa la direcciond de correo electronico con la que te registraste.</small>
                   </div>
-                  <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control mt-3" placeholder="Nombre">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control mt-3" placeholder="Apellido paterno">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control mt-3" placeholder="Apellido materno">
+                    </div>
+                  </div>
+                  <div class="form-group mt-2">
                     <label for="Password" class="">Contraseña</label>
-                    <input type="password" class="form-control" id="Password" placeholder="Contraseña">
+                    <input type="password" class="form-control" id="Password" placeholder="Contraseña" name="password" ngModel required>
                     <small id="emailHelp" class="form-text text-muted text-justify">Escribe tu contraseña.</small>
                   </div>
                   <div class="form-group">
@@ -70,17 +79,10 @@
                       </label>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="professor">
-                      <label class="form-check-label" for="professor">
-                        Soy un profesor
-                      </label>
-                    </div>
-                  </div>
                   <div class="text-center">
                     <button routerLink="/" class="btn btn-danger mr-4">Regresar</button>
-                    <button routerLink="/perfil" class="btn btn-primary shadow">Registrar</button>
+                    <input type="submit" class="btn btn-primary shadow" value="Registrar">
+                    <!-- <button routerLink="/perfil" class="btn btn-primary shadow">Registrar</button> -->
                   </div>
                 </div>
               </div>

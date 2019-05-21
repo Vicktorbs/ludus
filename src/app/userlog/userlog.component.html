@@ -1,13 +1,14 @@
-<form class="m-4 text-center">
+<form  #frmLogin="ngForm" class="m-4 text-center" (ngSubmit)="onLogin(frmLogin)">
   <div class="form-group row">
     <label for="userEmail" class="">Correo electronico</label>
-    <input type="email" class="form-control" id="userEmail" placeholder="correo@ejemplo.com">
+    <input type="email" class="form-control" id="userEmail" name="email" placeholder="correo@ejemplo.com" ngModel required>
     <small id="emailHelp" class="form-text text-muted text-justify">Ingresa la direcciond de correo electronico con la que te registraste.</small>
   </div>
   <div class="form-group row">
     <label for="Password" class="">Contraseña</label>
-    <input type="password" class="form-control" id="Password" placeholder="Contraseña">
+    <input type="password" class="form-control" id="Password" name="password" placeholder="Contraseña" ngModel required>
     <small id="emailHelp" class="form-text text-muted text-justify">Escribe tu contraseña.</small>
   </div>
-  <button routerLink="/playground" class="btn btn-primary shadow">Ingresar</button>
+  <input type="submit" value="Ingresar" class="btn btn-primary shadow">
+  <!-- <button routerLink="/playground">Ingresar</button> -->
 </form>
