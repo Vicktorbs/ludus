@@ -1,5 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light text-white" id="barr">
-
+<nav class="navbar navbar-expand-lg navbar-light text-white" id="barr" *ngIf="sesionState">
     <!-- User Info -->
     <app-user-nav></app-user-nav> 
     
@@ -36,7 +35,7 @@
 </nav>
 
 
-<div class="tab-content" id="nav-tabContent">
+<div class="tab-content" id="nav-tabContent" *ngIf="sesionState">
     <div class="tab-pane fade show active" id="math-area" role="tabpanel" aria-labelledby="math-area-tab">
         <app-math></app-math>
     </div>
@@ -57,5 +56,14 @@
     </div>
     <div class="tab-pane fade" id="geography-area" role="tabpanel" aria-labelledby="geography-area-tab">
         <app-geography></app-geography>
+    </div>
+</div>
+
+<div class="container" *ngIf="!sesionState">
+    <div class="row">
+        <div class="col-md text-center mt-5">
+            <p class="h2">Necesitas iniciar sesion para usar esta area</p>
+            <a routerLink="/" class="btn btn-dark shadow-lg mt-2">Ir a iniciar sesion</a>
+        </div>
     </div>
 </div>

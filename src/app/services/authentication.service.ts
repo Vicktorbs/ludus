@@ -17,6 +17,8 @@ export class AuthenticationService {
     return this.httpClient.post<JwtResponse>(`${this.AUTH_SERVER}/register`,
       user).pipe(tap(
         (res: JwtResponse) => {
+          console.log(user);
+          
           if (res) {
             // guardar token
             this.saveToken(res.dataUser.accessToken, res.dataUser.expiresIn);
@@ -28,12 +30,8 @@ export class AuthenticationService {
     console.log('en funcion ', user);
     return this.httpClient.post<JwtResponse>(`${this.AUTH_SERVER}/loging`, user).pipe(tap(
       (res: JwtResponse) => {
-
-        console.log('sending ', user);
         if (res) {
           // guardar token 
-          console.log(res.dataUser);
-          
           this.saveToken(res.dataUser.accessToken, res.dataUser.expiresIn);
         }
       })
@@ -52,11 +50,19 @@ export class AuthenticationService {
     this.token = token;
   }
 
-  private getToken(): string {
+  private getToken() {
     if (!this.token) {
       this.token = localStorage.getItem("ACCESS_TOKEN");
     }
     return this.token;
+  }
+
+  isLoged() {
+    if(this.getToken()){
+      return true
+    } else  {
+      return false
+    }
   }
 
 }

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light fixed-top" id="barr">
+<nav class="navbar navbar-light fixed-top" id="barr" *ngIf="sesionState">
   <a class="navbar-brand text-white font-weight-bold">
     <img src="../assets/img/ico.png" alt="Ludus" height="30">
     Ludus
@@ -8,7 +8,7 @@
   
 </nav>
 
-<div class="container mt-5 mb-3">
+<div class="container mt-5 mb-3" *ngIf="sesionState">
   <div class="row mt-3 pt-3">
     <div class="col-md-8 mt-3">
       <img src="../../../assets/img/user.png" alt="Perfil imagen" id="image-profile">
@@ -118,5 +118,14 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="container" *ngIf="!sesionState">
+  <div class="row">
+      <div class="col-md text-center mt-5">
+          <p class="h2">Necesitas iniciar sesion para usar esta area</p>
+          <a routerLink="/" class="btn btn-dark shadow-lg mt-2">Ir a iniciar sesion</a>
+      </div>
   </div>
 </div>

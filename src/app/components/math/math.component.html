@@ -7,12 +7,12 @@
         </div>
         <div class="card-body">
           <owl-carousel [options]="mySlideOptions" [items]="images" [carouselClasses]="['owl-carousel owl-theme', 'sliding']" >
-            <div class="item" *ngFor="let image of links;let i = index">
+            <div class="item" *ngFor="let link of alinks;let i = index">
               <div>
                 <div class="card m-2 shadow-sm">
-                  <img src="../../../assets/img/adventure-time-landscape.jpg" class="card-img-top" alt="...">
+                  <img [src]="link.srcImg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <a routerLink="/playground" class="btn btn-secondary stretched-link">{{image}}</a>
+                    <a routerLink="/playground" class="btn btn-secondary stretched-link">{{link.act}}</a>
                   </div>
                 </div>
               </div>

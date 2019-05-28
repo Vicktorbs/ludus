@@ -15,28 +15,28 @@
                       <input type="text" class="form-control mt-3" placeholder="Nombre" name="name" ngModel required>
                     </div>
                     <div class="col-md-6">
-                      <input type="text" class="form-control mt-3" placeholder="Apellido paterno" name="apellid_paterno">
+                      <input type="text" class="form-control mt-3" placeholder="Apellido paterno" name="lastname" ngModel required>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-6">
-                      <input type="text" class="form-control mt-3" placeholder="Apellido materno" name="apellido_materno">
+                      <input type="text" class="form-control mt-3" placeholder="Apellido materno" name="secondlastname" ngModel required>
                     </div>
                   </div>
                   <div class="form-group mt-2">
                     <label for="age">Edad</label>
-                    <input type="number" class="form-control" id="age" placeholder="Edad">
+                    <input type="number" class="form-control" id="age" placeholder="Edad" name="age" ngModel required>
                   </div>
                   <div class="form-group mt-2">
                     <label for="school">Escuela</label>
-                    <select class="form-control text-center" id="school">
+                    <select class="form-control text-center" id="school" name="school" ngModel>
                       <option>Lorem ipsum dolor sit amet.</option>
                       <option>Lorem ipsum dolor sit.</option>
                     </select>
                   </div>
                   <div class="form-group mt-2">
                     <label for="school-level">Grado</label>
-                    <select class="form-control text-center" id="school-level">
+                    <select class="form-control text-center" id="school-level" name="schoolgrade" ngModel required>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
@@ -55,15 +55,15 @@
                   </div>
                   <div class="row">
                     <div class="col-md-6">
-                      <input type="text" class="form-control mt-3" placeholder="Nombre">
+                      <input type="text" class="form-control mt-3" placeholder="Nombre" name="tname" ngModel required>
                     </div>
                     <div class="col-md-6">
-                      <input type="text" class="form-control mt-3" placeholder="Apellido paterno">
+                      <input type="text" class="form-control mt-3" placeholder="Apellido paterno" name="tlastname" ngModel required>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-6">
-                      <input type="text" class="form-control mt-3" placeholder="Apellido materno">
+                      <input type="text" class="form-control mt-3" placeholder="Apellido materno" name="tsecondlastname" ngModel required>
                     </div>
                   </div>
                   <div class="form-group mt-2">
@@ -73,7 +73,7 @@
                   </div>
                   <div class="form-group">
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="terms">
+                      <input class="form-check-input" type="checkbox" id="terms" name="terms" ngModel required>
                       <label class="form-check-label" for="terms">
                         Terminos y condiciones <a class="btn btn-outline-warning">Leer</a>
                       </label>
